@@ -20,8 +20,13 @@ class Program
 {
 	static void Main( string[] args )
 	{
+		Console.WriteLine("What's the first Number?");
+		int answer1 = Convert.ToInt32(Console.ReadLine());
 
-		Adder adder = new Adder( 1, 2 );
+		Console.WriteLine("What's the second number?");
+		int answer2 = Convert.ToInt32(Console.ReadLine());
+		
+		Adder adder = new Adder( answer1, answer2 );
 		int result = adder.Add();
 
 		Console.WriteLine( result );
